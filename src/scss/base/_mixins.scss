@@ -57,23 +57,19 @@
     grid-template-columns: repeat($columnas, 1fr);
 }
 
-@mixin heading ($salto : false) {
-    font-weight: 400;
+@mixin headingCursiva {
+    text-align: center;   
+    color: v.$secundario;
+    font-family: v.$fuenteCursiva;
+    line-height: 0.8;
+    font-weight: 300;
+    text-transform: lowercase;
+    font-size: 4rem;
 
-    span {
-        font-weight: 700;
-
-        @if($salto) {
-            display: block;
-        }
-    }
-
-    &::after {
-        content: '';
+    span{
+        color: v.$negro;
         display: block;
-        height: 1rem;
-        width: 15rem;
-        margin-top: 1rem;
-        background-image: linear-gradient(to right, v.$primario 0%, v.$primario 50%, color.adjust(v.$primario, $lightness: 20%) 50%, color.adjust(v.$primario, $lightness: 20%) 100%);
+        text-transform: uppercase;
+        font-family: v.$fuentePrincipal;
     }
 }
