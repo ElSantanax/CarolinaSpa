@@ -1,0 +1,51 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.productos {
+    &__heading {
+        @include m.headingCursiva;
+        margin-bottom: 5rem;
+    }
+
+    &__grid {
+        @include m.grid(1, 2rem);
+
+        @include m.tablet {
+            @include m.grid(2, 2rem)
+        }
+
+        @include m.desktop {
+            @include m.grid(4, 2rem)
+        }
+    }
+}
+
+.producto {
+
+    &__contenido{
+        background-color: v.$blanco;
+        padding: 2rem;
+        border-radius: .5rem;
+    }
+
+    &__imagen {
+        width: 100% ;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+
+    &__nombre{
+        text-align: center;        
+        color: v.$secundario;
+    }
+
+    &__descripcion {
+        text-align: justify;
+        color: v.$gris;
+    }
+
+    &__precio {
+        text-align: center;
+        color: v.$gris;
+    }
+}
