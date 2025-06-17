@@ -2,6 +2,8 @@
 @use 'base/variables' as v;
 
 .cards {
+    margin-bottom: 5rem;
+
     &__grid {
         @include m.tablet {
             @include m.grid(3, 2rem)
@@ -12,6 +14,10 @@
 .card {
     max-width: 35rem;
     margin: 0 auto 2rem auto;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 
     @include m.tablet {
         max-width: unset;
