@@ -1,0 +1,54 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.sociales {
+    margin: 5rem 0;
+    display: flex;
+
+    @include m.tablet {
+        margin: 0;
+    }
+
+    &__enlaces {
+        &::before {
+            content: '';
+            padding: 2rem;
+            display: inline-block;
+        }
+
+        &[href*='facebook.com']::before {
+            background-image: url('/build/img/icono_facebook.svg');
+        }
+
+        &[href*='instagram.com']::before {
+            background-image: url('/build/img/icono_instagram.svg');
+        }
+
+        &[href*='x.com']::before {
+            background-image: url('/build/img/icono_twitter.svg');
+        }
+
+        &[href*='youtube.com']::before {
+            background-image: url('/build/img/icono_youtube.svg');
+        }
+
+        &[href*='tiktok.com']::before {
+            background-image: url('/build/img/icono_tiktok.svg');
+        }
+
+        &[href*='pinterest.com']::before {
+            background-image: url('/build/img/icono_pinterest.svg');
+        }
+    }
+
+    &__accesible {
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+        display: block;
+    }
+}
