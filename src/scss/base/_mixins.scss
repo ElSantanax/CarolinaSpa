@@ -58,7 +58,7 @@
 }
 
 @mixin headingCursiva {
-    text-align: center;   
+    text-align: center;
     color: v.$secundario;
     font-family: v.$fuenteCursiva;
     line-height: 0.8;
@@ -66,7 +66,7 @@
     text-transform: lowercase;
     font-size: 4rem;
 
-    span{
+    span {
         color: v.$negro;
         display: block;
         text-transform: uppercase;
