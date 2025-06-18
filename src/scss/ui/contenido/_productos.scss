@@ -22,20 +22,20 @@
 
 .producto {
 
-    &__contenido{
+    &__contenido {
         background-color: v.$blanco;
         padding: 2rem;
         border-radius: .5rem;
     }
 
     &__imagen {
-        width: 100% ;
+        width: 100%;
         border-top-left-radius: .5rem;
         border-top-right-radius: .5rem;
     }
 
-    &__nombre{
-        text-align: center;        
+    &__nombre {
+        text-align: center;
         color: v.$secundario;
     }
 
