@@ -1,0 +1,28 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.slider {
+
+    padding-top: 6rem;
+
+    &__contenedor {
+
+
+        @include m.tablet {
+            @include m.grid(3, 2rem)
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+
+    &__slide {
+
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+}
