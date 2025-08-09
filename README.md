@@ -118,15 +118,6 @@ El archivo `gulpfile.js` incluye las siguientes tareas:
 - **Optimización de imágenes** con diferentes formatos
 - **Watch mode** para desarrollo en tiempo real
 - **Source maps** para debugging
+  
+<img width="1920" height="3847" alt="CapturePage(1)" src="https://github.com/user-attachments/assets/89c322d9-063c-4442-897d-74dfb673a796" />
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia ISC.
-
-## 👨‍💻 Autor
-
-**Juan De la Torre** - [@codigoconjuan](https://github.com/codigoconjuan)
-
----
-
-*Proyecto desarrollado como parte del curso de desarrollo web moderno con Gulp, SASS y metodología BEM.*
